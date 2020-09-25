@@ -1,5 +1,4 @@
-- name: Навыки
-  ph: <span class="bar-expand photoshop"></span><em>Photoshop</em>
-  WP: <span class="bar-expand wordpress"></span><em>Wordpress</em>
-  CSS: <span class="bar-expand css"></span><em>CSS</em>
-  HTML5: <span class="bar-expand html5"></span><em>HTML5</em>
+- name: <li><span class="bar-expand seventyPercent"></span><em>Asp.Net(C#)</em></li>
+- name: <li><span class="bar-expand seventyPercent"></span><em>Верстка(HTML+CSS)</em></li>
+- name: <li><span class="bar-expand more-than-half"></span><em>(JS)TS</em></li>
+- name: <li><span class="bar-expand more-than-half"></span><em>React+Redux</em></li>

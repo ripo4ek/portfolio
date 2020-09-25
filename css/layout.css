@@ -329,7 +329,7 @@ ul#nav li.current a { color: #F06000; }
     font-weight: 600;
 }
 
-.photoshop {
+.more-than-half {
   	width: 60%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
@@ -349,7 +349,7 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
+.seventyPercent {
   	width: 80%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;

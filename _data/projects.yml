@@ -1,10 +1,11 @@
-- name: Сайт ООО "ТАРИ БАРИ"
-  technology: WordPress
-  description:
+- name: Video-Hoster
+  technology: Frontend - JS(TS), React, Redux. Backend - Asp.Net, C#, MongoDB
+  link: <a href="https://github.com/ripo4ek/video-hoster">GitHub</a>
+  description: Платформа для загрузки и просмотра различного медиа контента (фильмов, сериалов итд)
+  time: 2020
+
+- name: Online-Course-System
+  technology: Asp.Net, C#, Entity Framework,Identity Framework, MsSQL
+  link: <a href="https://github.com/ripo4ek/Online-Course-System">GitHub</a>
+  description: Server-side rendering проект для создания и просмотра онлайн курсов. Примечание - Проект писался без знаний в области фронтэнда и служит для демонстрации знаний backend части.
   time: 2019
-
-
-- name: Web Store
-  technology: ASP.Net C#
-  description:
-  time: 2018

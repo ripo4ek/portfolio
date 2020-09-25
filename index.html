@@ -1,199 +1,194 @@
 ---
-layout: hf
+layout: main
 title: Home
 
-description:
-subname: Контактная информация   
-person: Гребенюков Сергей
-addres: 190103 Лермонтовский пр-кт
-            Санкт-Петербург
-phone: 8(900) 658-65-54
-email: prince.sitri@yandex.ru
+subname: Контактная информация
+person: Ляпустин Андрей
+addres: 195220 Гражданский пр
+  Санкт-Петербург
+phone: +7(960) 250-51-66
+email: Lyap-andr@yandex.ru
 ---
 
-   <section id="about">
+<section id="about">
+  <div class="row">
+    <div class="three columns">
+      <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+    </div>
 
+    <div class="nine columns main-col">
+      <p>
+        Впервые я познакомился с программированием в школе, решая простые
+        задачки на
+        <span class="important">PascalABC</span>
+        я все больше вовлекался в это ремесло. Однако, полноценно я стал уделять
+        ему время только когда поступил в Университет, преподавательский состав
+        был слабым и приходилось изучать все самому. Меня всегда интересовало
+        web-направление и в связи с тем что на тот момент мне симпотизировал
+        язык
+        <span class="important">C#</span>
+        я решил выбрать платформу
+        <span class="important">Asp.NET</span>
+        . как
+        <span class="important">backend</span>
+        составляющую. Для
+        <span class="important">frontend'a</span>
+        я выбрал связку
+        <span class="important">React+TS+Redux</span>
+        , так как по моему мнению данная связка имеет идеальный баланс между
+        гибкостью и надежностью. В разработке меня больше всего привлекают две
+        вещи. Первое, это возможность создавать продукты которые могут так или
+        иначе помочь сотням и тысячам людей. Второе, различные сложные задачи
+        которые интересно решать.
+      </p>
       <div class="row">
+        <div class="columns contact-details">
+          <h2>{{page.subname}}</h2>
+          <p class="address">
+            <span>{{page.person}}</span>
+            <br />
+            <span>{{page.addres}}</span>
+            <br />
+            <span>{{page.phone}}</span>
+            <br />
+            <span>{{page.email}}</span>
+          </p>
+        </div>
 
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>{{page.description}}
-             </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>{{page.subname}}</h2>
-                  <p class="address">
-						   <span>{{page.person}}</span><br>
-						   <span>{{page.addres}}
-                     </span><br>
-						   <span>{{page.phone}}</span><br>
-                     <span>{{page.email}}</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Скачать резюме</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+        <div class="columns download">
+          <p>
+            <a href="#" class="button">
+              <i class="fa fa-download"></i>
+              Скачать резюме
+            </a>
+          </p>
+        </div>
       </div>
+      <!-- end row -->
+    </div>
+    <!-- end .main-col -->
+  </div>
+</section>
+<!-- About Section End-->
 
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
+<!-- Resume Section
    ================================================== -->
-   <section id="resume">
-
-      <!-- Education
+<section id="resume">
+  <!-- Education
       ----------------------------------------------- -->
-      <div class="row education">
+  <div class="row education">
+    <div class="three columns header-col">
+      <h1><span>Образование</span></h1>
+    </div>
 
-         <div class="three columns header-col">
-            <h1><span>Образование</span></h1>
-         </div>
+    <div class="nine columns main-col">
+      {% for item in site.data.education %}
+      <div class="row item">
+        <div class="twelve columns">
+          <h2>{{item.level}}</h2>
+          <p class="info">
+            {{ item.name }}, {{item.speciality}}
+            <span>&bull;</span>
+            <em class="date">{{item.time}}</em>
+          </p>
 
-         <div class="nine columns main-col">
-             
-             {% for item in site.data.education %}
-    <div class="row item">
+          <p></p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- main-col end -->
+  </div>
+  <!-- End Education -->
 
-               <div class="twelve columns">
-
-                  <h2>{{item.level}}</h2>
-                  <p class="info">{{ item.name }}, {{item.speciality}} <span>&bull;</span> <em class="date">{{item.time}}</em></p>
-
-                  <p>
-                  
-                  </p>
-
-               </div>
-
-            </div>
-  {% endfor %}
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
+  <!-- Work
       ----------------------------------------------- -->
-      <div class="row work">
+  <div class="row work">
+    <div class="three columns header-col">
+      <h1><span>Работа</span></h1>
+    </div>
 
-         <div class="three columns header-col">
-            <h1><span>Работа</span></h1>
-         </div>
+    <div class="nine columns main-col">
+      {% for item in site.data.work %}
+      <div class="row item">
+        <div class="twelve columns">
+          <h2>{{item.name}}</h2>
+          <p class="info">
+            {{ item.position }}
+            <span>&bull;</span>
+            <em class="date">{{item.time}}</em>
+          </p>
 
-         <div class="nine columns main-col">
+          <p></p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- main-col end -->
+  </div>
+  <!-- End Work -->
 
-           {% for item in site.data.work %}
-    <div class="row item">
+  <div id="projects" class="row work">
+    <div class="three columns header-col">
+      <h1><span>Проекты</span></h1>
+    </div>
 
-               <div class="twelve columns">
+    <div class="nine columns main-col">
+      {% for item in site.data.projects %}
+      <div class="row item">
+        <div class="twelve columns">
+          <h2>{{item.name}}</h2>
+          <span>Исходный код -</span>
+          {{item.link}}
+          <p class="info">
+            <span>Стек:</span>
+            {{ item.technology }}
+            <span>&bull;</span>
+            <em class="date">{{item.time}}</em>
+          </p>
+          <p class="info">{{item.description}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- main-col end -->
+  </div>
+  <!-- End Work -->
 
-                  <h2>{{item.name}}</h2>
-                  <p class="info">{{ item.position }}<span>&bull;</span> <em class="date">{{item.time}}</em></p>
-
-                  <p>
-                  
-                  </p>
-
-               </div>
-
-            </div>
-  {% endfor %}
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-       
-       <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Проекты</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-              {% for item in site.data.projects %}
-    <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h2>{{item.name}}</h2>
-                  <p class="info">{{ item.technology }}<span>&bull;</span> <em class="date">{{item.time}}</em></p>
-
-                  <p>
-                  
-                  </p>
-
-               </div>
-
-            </div>
-  {% endfor %}
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
+  <!-- Skills
       ----------------------------------------------- -->
-      <div class="row skill">
+  <div class="row skill">
+    <div class="three columns header-col">
+      <h1><span>Навыки</span></h1>
+    </div>
 
-         <div class="three columns header-col">
-            <h1><span>Навыки</span></h1>
-         </div>
+    <div class="nine columns main-col">
+      <p></p>
 
-         <div class="nine columns main-col">
+      <div class="bars">
+        <ul class="skills">
+          {% for item in site.data.skills %} {{item.name}} {% endfor %}
+        </ul>
+      </div>
+      <!-- end skill-bars -->
+    </div>
+    <!-- main-col end -->
+  </div>
+  <!-- End skills -->
+</section>
+<!-- Resume Section End-->
 
-            <p>
-                
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-                        {% for item in site.data.skills %}
-					    <li>{{item.ph}}</li>
-                        <li>{{item.WP}}</li>
-						<li>{{item.CSS}}</li>
-						<li>{{item.HTML5}}</li>
-                         {% endfor %}
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-   <!-- Java Script
+<!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  window.jQuery ||
+    document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>

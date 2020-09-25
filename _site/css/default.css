@@ -814,7 +814,7 @@ properly.
     background-color: #11ABB0;
 }
 
-.tg-bottum {
+.tg-bottom {
     mask: url(../images/tg.svg);
     -webkit-mask: url(../images/tg.svg);
     width: 30px;
@@ -823,8 +823,12 @@ properly.
     background-color: #525252;
 }
 
-.tg-bottum:hover{
+.tg-bottom:hover{
     background-color: white;
+}
+.important{
+   font-weight: 600;
+   color: white;
 }
 }
 
