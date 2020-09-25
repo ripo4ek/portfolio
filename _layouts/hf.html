@@ -1,0 +1,66 @@
+---
+layout: main
+Name: home
+---
+
+      <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">На главную</a></li>
+            <li><a class="smoothscroll" href="#about">Обо мне</a></li>
+	         <li><a class="smoothscroll" href="#resume">Резюме</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Проекты</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav>
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">{{ page.Name }}</h1>
+            <h3>Я вляюсь junior <span>веб разработчиком</span>, имея знания в областях<span> frontend </span> и <span>backend</span> разработки создаю различные веб-приложения. Давайте <a class="smoothscroll" href="#about">опустимся ниже</a>
+            и узнаем побольше <a class="smoothscroll" href="#about">обо мне</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-vk"></i></a></li>
+               <li><a href="#"><i class="fa tg"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> 
+      {{content}}
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-vk"></i></a></li>
+               <li><a href="#"><i class="fa tg-bottum"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2020 Ryu</li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer>

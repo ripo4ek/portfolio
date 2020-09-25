@@ -1,0 +1,8 @@
+- name: Обо мне
+  description:
+  subname: Контактная информация   
+  person: Гребенюков Сергей
+  addres: 190103 Лермонтовский пр-кт
+            Санкт-Петербург
+  phone: 8(900) 658-65-54
+  email: prince.sitri@yandex.ru
